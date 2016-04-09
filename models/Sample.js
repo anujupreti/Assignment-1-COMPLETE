@@ -7,7 +7,7 @@ var SampleSchema = new mongoose.Schema({
 {
     collection: 'art'
 });
-mongoose.model('art_collection', SampleSchema);
+mongoose.model('Sample', SampleSchema);
 
 /*
 {
