@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 });
  
 router.get('/sample', function(req, res, next) {
-  Sample.find(function(err, sample){
+  Sample.find({ _id: { $gt: 2000 } }, function(err, sample){
     if(err){ return next(err); }
     res.json(sample);
   });
